@@ -1,0 +1,141 @@
+body{
+
+    background: #ccdbfd;
+
+    animation: bgcolor infinite 25s;
+}
+
+
+#clockcontainer{
+
+
+    animation: colorchange infinite 6s;
+    
+    position: relative;
+border: 8px solid;
+border-top-color: #ba181b;
+border-left-color: #f9c74f;
+border-bottom-color: #3c096c;
+border-right-color: #ff5d8f;
+border-radius: 50%;
+margin: auto;
+width: 40vw;
+height: 40vw;
+background: url(clock1.png) no-repeat;
+background-size: 100%;
+}
+
+#hour , #Min , #Sec {
+
+position: absolute;
+border-radius: 10px;
+background: black;
+}
+
+#hour{
+    background-color: #ffb703;
+    height: 26%;
+    width: 1%;
+    top: 26%;
+    left: 49.5%;
+    transform-origin: bottom;
+    transform-origin: bottom;
+    /* display:none; */
+   
+} 
+
+#Min{
+    background-color: #e63946;
+    height: 40%;
+    width: 0.8%;
+    top: 12%;
+    left: 49.5%;
+    transform-origin: bottom;
+    /* display:none; */
+}
+   
+
+
+
+
+#Sec{
+    height: 15%;
+    width: 0.5%;
+    top: 37%;
+    left: 49.5%;
+    transform-origin: bottom;
+    /* display:none; */
+
+
+
+}
+
+@keyframes bgcolor{
+
+    0%{
+background-color:#fadde1 ;
+    }
+    10%{
+background-color:#caf0f8 ;
+    }
+20%{
+    background-color: #545e56;
+    /* c7f9cc; */
+}
+30%{
+    background-color: #dac3e8;
+}
+40%{
+    background-color: #997b66;
+    /* c9e4ca */
+}
+50%{
+    background-color: #ffee9d;
+}
+60%{
+    background-color:#cccccc ;
+}
+70%{
+    background-color: #8a2846;
+    /* d9ae94; */
+}
+80%{
+    background-color:#ff9ebb ;
+}
+90%{
+    background-color:#051923 ;
+}
+100%{
+    background-color:#fadde1 ;
+}
+}
+
+
+/* 
+border-top-color: #ba181b;
+border-left-color: #f9c74f;
+border-bottom-color: #3c096c;
+border-right-color: #ff5d8f; */
+
+
+@keyframes  colorchange{
+
+    0%{border-top-color: none;}
+    10%{border-right-color: #ba181b;}
+    20%{border-bottom-color:#ff5d8f ;}
+    30%{border-left-color: #3c096c;}
+    40%{border-top-color:#f9c74f ;}
+    50%{border-right-color:#3c096c ;}
+    60%{border-bottom-color:#ba181b ;}
+    70%{border-left-color:#ff5d8f ;}
+    80%{border-top-color:#ff5d8f ;}
+    90%{border-right-color:#f9c74f ;}
+    100%{border-bottom-color:#3c096c ;}
+}
+
+
+
+
+
+
+/*display:none;
